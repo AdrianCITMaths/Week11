@@ -69,7 +69,7 @@ server <- function(input, output) {
      xbins=list(start=minX,end=maxX,size=sizeX)
      plot_ly()%>%
        add_trace(x = x,type = "histogram",xbins=xbins,cumulative=list(enabled=TRUE),name="cumulative distribution",marker=list(line=list(color="white",width=1)))%>%
-       add_trace(x = x,opacity = 1,type = "histogram",xbins=xbins,name="distribution",marker=list(line=list(color="yellow",width=1),color="blue"))%>%
+       add_trace(x = x,opacity = 1,type = "histogram",xbins=xbins,name="distribution",marker=list(line=list(color="white",width=1),color="blue"))%>%
        layout(title=input$Header,barmode='overlay')%>%
        config(displayModeBar = FALSE)
    })
