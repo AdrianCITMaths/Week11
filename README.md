@@ -2,4 +2,7 @@
 Week11 example test
 
 
-Changeing this one up again
+x = 4
+
+x2 = x^2
+
